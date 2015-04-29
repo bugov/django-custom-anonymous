@@ -13,7 +13,7 @@ setup(
     version='0.1',
     author='Georgy Bazhukov',
     author_email='georgy.bazhukov@gmail.com',
-    description='Library provides customization of AnonymousUser in Django.',
+    description='Library provides customization of AnonymousUser in Django',
     long_description=read('README.markdown'),
     url='https://github.com/bugov/django-custom-anonymous',
     packages=find_packages(),

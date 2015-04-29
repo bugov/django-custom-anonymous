@@ -29,6 +29,6 @@ Create your own anonymous (for example):
         ip = None
         
         def __init__(self, request):
-            self = request.META.get('REMOTE_ADDR')
+            self.ip = request.META.get('REMOTE_ADDR')
             super(AnonymousUser, self).__init__()
 
