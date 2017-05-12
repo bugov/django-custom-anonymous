@@ -2,6 +2,8 @@
 
 Library provides customization of AnonymousUser.
 
+Works with Python >= 2.6, Python >= 3.2, Django >= 1.5.
+
 ## Installation
 
     pip install django-custom-anonymous
