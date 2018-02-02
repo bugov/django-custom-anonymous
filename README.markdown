@@ -2,7 +2,7 @@
 
 Library provides customization of AnonymousUser.
 
-Works with Python >= 2.6, Python >= 3.2, Django >= 1.5 (>= 2.0 too).
+Works with Python >= 2.6, >= 3.2, Django >= 1.5, >= 2.0.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Add to `settings`:
 
 Add to middlewares:
 
-    MIDDLEWARE_CLASSES = (
+    MIDDLEWARE = (
     ...
         'custom_anonymous.middleware.AuthenticationMiddleware',
     ...
