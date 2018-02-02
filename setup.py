@@ -14,7 +14,7 @@ requires=[
 
 setup(
     name='django-custom-anonymous',
-    version='0.2',
+    version='0.3',
     author='Georgy Bazhukov',
     author_email='georgy.bazhukov@gmail.com',
     description='Library provides customization of AnonymousUser in Django',
@@ -28,6 +28,7 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 1.8',
         'Framework :: Django :: 1.9',
+        'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
@@ -43,4 +44,3 @@ setup(
     tests_require=requires,
     setup_requires=requires,
 )
-
