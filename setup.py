@@ -14,7 +14,7 @@ requires=[
 
 setup(
     name='django-custom-anonymous',
-    version='0.3',
+    version='0.4',
     author='Georgy Bazhukov',
     author_email='georgy.bazhukov@gmail.com',
     description='Library provides customization of AnonymousUser in Django',
