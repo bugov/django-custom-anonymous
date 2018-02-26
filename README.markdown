@@ -1,5 +1,8 @@
 # django-custom-anonymous
 
+
+[![Build Status](https://travis-ci.org/bugov/django-custom-anonymous.svg?branch=master)](https://travis-ci.org/bugov/django-custom-anonymous)
+
 Library provides customization of AnonymousUser.
 
 Works with Python >= 2.6, >= 3.2, Django >= 1.5, >= 2.0.
