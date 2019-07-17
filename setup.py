@@ -46,5 +46,5 @@ setup(
     test_suite="runtests",
     requires=requires,
     tests_require=requires,
-    setup_requires=requires,
+#    setup_requires=requires,
 )
