@@ -1,4 +1,5 @@
 import importlib
+import django
 from django.conf import settings
 from django.utils.functional import SimpleLazyObject
 from django.contrib.auth import get_user
@@ -11,7 +12,8 @@ AnonymousUser = getattr(importlib.import_module(module), klass)
 def get_cached_user(request):
     if not hasattr(request, '_cached_user'):
         user = get_user(request)
-        if user.is_anonymous:
+        if ((django.VERSION >= (1,10) and user.is_anonymous) or
+                django.VERSION < (1,10) and user.is_anonymous()):
             user = AnonymousUser(request)
 
         request._cached_user = user
