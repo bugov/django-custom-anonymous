@@ -2,8 +2,9 @@
 # coding: utf-8
 
 import os
-import sys
 from setuptools import setup, find_packages
+
+from custom_anonymous import __version__
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -14,7 +15,7 @@ requires=[
 
 setup(
     name='django-custom-anonymous',
-    version='0.4',
+    version=__version__,
     author='Georgy Bazhukov',
     author_email='georgy.bazhukov@gmail.com',
     description='Library provides customization of AnonymousUser in Django',
@@ -46,5 +47,4 @@ setup(
     test_suite="runtests",
     requires=requires,
     tests_require=requires,
-#    setup_requires=requires,
 )
